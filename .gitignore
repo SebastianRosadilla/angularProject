@@ -1,0 +1,11 @@
+node_modules/*
+bower_components/*
+reports/
+coverage/
+*.swp
+*.swo
+*.log
+*.DS_Store
+*.rdb
+local.js
+build/
