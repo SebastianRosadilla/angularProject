@@ -20,5 +20,11 @@
   "dependencies": {
     "angular": "~1.4.7",
     "gulp": "~3.9.0"
+  },
+  "devDependencies": {
+    "angular": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "ng-resource": "~0.0.2",
+    "angular-resource": "~1.4.7"
   }
 }
