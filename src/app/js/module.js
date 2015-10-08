@@ -1,12 +1,13 @@
-(function(ng) {
+(function (ng) {
   'use strict';
 
   // Module dependencies
   var dependencies = [
-    'ui.router'
+    'ui.router',
+    'sl.docs.main'
   ];
 
-  ng.module('sr.events', dependencies)
+  ng.module('sl.docs', dependencies)
     .config(function($stateProvider, $urlRouterProvider) {
       $urlRouterProvider.otherwise('/');
 
