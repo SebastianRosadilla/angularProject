@@ -15,7 +15,7 @@
           url: '/',
           views: {
             overview: {
-              templateUrl: 'overview/templates/overview.html'
+              templateUrl: 'app/templates/overview.html'
             }
           }
         });
