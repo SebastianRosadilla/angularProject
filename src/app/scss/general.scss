@@ -1,0 +1,49 @@
+body > div {
+  background-color: #9ACD32;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px;
+}
+
+div[ui-view=sidebar] {
+  float: left;
+  width: 20%;
+}
+
+header {
+  section {
+    border: 2px solid black;
+    display: inline-flex;
+    width: 100%;
+    .title {
+      margin-left: 2em;
+    }
+    .menu {
+      display: inline-flex;
+      position: absolute;
+      right: 5px;
+      div {
+        margin-right: 25px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+footer {
+  border: 2px solid black;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.icons {
+  height: 40px;
+  border-color: black;
+  width: 40px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

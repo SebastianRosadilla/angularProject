@@ -3,7 +3,8 @@
 
   // Module dependencies
   var dependencies = [
-    'ui.router'
+    'ui.router',
+    'sl.docs.sidebar'
   ];
 
   ng.module('sl.docs.main', dependencies)
@@ -12,9 +13,13 @@
         .state('main', {
           url: '/main',
           views: {
-            main: {
+            app: {
               templateUrl: 'main/templates/main.html',
               controller: 'MainCtrl as main'
+            },
+            sidebar: {
+              templateUrl: 'sidebar/templates/sidebar.html',
+              controller: 'SidebarCtrl as sidebar'
             }
           }
         })

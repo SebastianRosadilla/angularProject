@@ -15,7 +15,7 @@
         .state('overview', {
           url: '/',
           views: {
-            overview: {
+            app: {
               templateUrl: 'app/templates/overview.html'
             }
           }

@@ -1,0 +1,23 @@
+.overview {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  background-color: #9ACD32;
+  section .search {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-flex;
+    background-color: #6DAE20;
+  }
+  .btn-search {
+    border: 0;
+    font-size: 30px;
+  }
+  .btn-simple {
+    border: 1px solid #6DAE20;
+    border-radius: 3px;
+    background: white;
+    color: #6DAE20;
+    font-size: 18px;
+  }
+}

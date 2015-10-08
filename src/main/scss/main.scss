@@ -1,0 +1,9 @@
+.main {
+  margin-left: 20%;
+  text-align: center;
+  width: 80%;
+  .first-child {
+    border: 10px solid black;
+    max-height: 100%;
+  }
+}

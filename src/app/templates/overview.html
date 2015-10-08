@@ -1,31 +1,38 @@
 <table class="overview">
   <thead>
-    <h3>WELCOME TO THE DEVDOCS</h3>
+    <th>
+      <h3>WELCOME TO THE DEVDOCS</h3>
+    </th>
   </thead>
   <tbody>
     <tr>
-      <h3>Search Documents</h3>
-    </tr>
-    <tr>
       <td>
-        <img ng-src="http://goo.gl/ulxthb"/>
-      </td>
-      <td>
-        <input type="search"
-               name="input">
+        <h3>Search Documents</h3>
       </td>
     </tr>
     <tr>
       <td>
-        <input type="button"
-               name="search"
-               value="SEARCH">
+        <section>
+          <div class="search">
+            <img class="icons"
+                 ng-src="http://goo.gl/ZAw2GQ"/>
+            <input class="btn-search"
+                   type="search"
+                   name="input"
+                   value="Search...">
+          </div>
+        </section>
       </td>
+    </tr>
+    <tr>
       <td>
-        <input type="button"
-               name="entry"
-               value="ENTRY"
-               ui-sref="main">
+        <section>
+          <input class="btn-simple"
+                 type="button"
+                 name="entry"
+                 value="ENTRY"
+                 ui-sref="main">
+        </section>
       </td>
     </tr>
   </tbody>
