@@ -9,3 +9,10 @@ var Dependencies = [
   'bower install angular-resource --save-dev',
   'bower install angular-ui-router --save-dev'
 ];
+
+<!-- RUN THE API -->
+'npm install json-server'
+'json-server db.json -p 8000'
+
+<!-- RUN THE UI -->
+'gulp GameStart'

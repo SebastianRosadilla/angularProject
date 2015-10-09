@@ -1,3 +1,33 @@
+html {
+    ::-webkit-scrollbar-track
+  {
+  	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  	background-color: #F5F5F5;
+  	border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar
+  {
+  	width: 5px;
+  	background-color: #F5F5F5;
+  }
+
+  ::-webkit-scrollbar-thumb
+  {
+  	border-radius: 10px;
+  	background-color: #FFF;
+  	background-image: -webkit-gradient(linear,
+  									   40% 0%,
+  									   75% 84%,
+  									   from(#4D9C41),
+  									   to(#19911D),
+  									   color-stop(.6,#54DE5D))
+  }
+}
+body {
+  max-height: 2em;
+  overflow: auto;
+}
 body > div {
   background-color: #9ACD32;
   border: 2px solid black;

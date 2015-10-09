@@ -4,7 +4,8 @@
   // Module dependencies
   var dependencies = [
     'ui.router',
-    'sl.docs.main'
+    'sl.docs.main',
+    'ngResource'
   ];
 
   ng.module('sl.docs', dependencies)
