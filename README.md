@@ -8,6 +8,7 @@ var Dependencies = [
   'bower install angular --save-dev',
   'bower install angular-resource --save-dev',
   'bower install angular-ui-router --save-dev'
+  'bower install angular-extend-promises'
 ];
 
 <!-- RUN THE API -->

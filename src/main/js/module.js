@@ -5,7 +5,7 @@
   var dependencies = [
     'ui.router',
     'sl.docs.sidebar',
-    'sl.docs'
+    'sl.docs',
   ];
 
   ng.module('sl.docs.main', dependencies)
