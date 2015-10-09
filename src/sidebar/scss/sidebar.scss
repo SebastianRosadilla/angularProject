@@ -1,6 +1,7 @@
 .sidebar {
   box-shadow: 2px 2px;
   max-height: 47.5em;
+  overflow-x: hidden;
   overflow-y: scroll;
   padding-right: 5px;
   div {
@@ -12,6 +13,7 @@
     height: 100%;
     left: 0;
     margin-top: 3.5px;
+    transition: all 0.7s ease-in-out;
     width: 100%;
     h4 {
       margin-left: 5px;
@@ -23,7 +25,20 @@
       width: 100%;
     }
   }
+  div:hover, div.hover_effect {
+    background: #3287A2;
+    border: 3px solid black;
+    box-shadow: 7px 7px;
+    transform: rotateX(360deg) scale(1.1) translateX(30px);
+    width: 87%;
+    z-index: 100;
+  }
+  div:visited {
+    transform: translateX(-20px);
+  }
   div:first-child {
-    background-color: #CD5C5C;
+    background-color: #CD853F;
+    border: 2px solid black;
+    border-radius: 2px;
   }
 }

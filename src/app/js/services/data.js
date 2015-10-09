@@ -4,7 +4,7 @@
   var TechStoreProvider = function () {
     var items = [];
     var main_Name = "About us";
-    var main_Description = "http://localhost:3000";
+    var main_Description = "";
 
     var TechStore = function ($q, $sce, Technology) {
         this._$q = $q;
