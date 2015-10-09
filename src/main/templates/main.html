@@ -3,8 +3,10 @@
     <div class="">
       <h2>{{main.TechStore.getName().toUpperCase()}}</h2>
     </div>
-    <div class="">
-      <h4>{{main.TechStore.getDescription()}}</h4>
+    <div>
+      <a href="{{main.TechStore.getDescription()}}" target="_blank"><h5>{{ main.TechStore.getDescription() }}</h5></a>
+      <iframe ng-src="{{ main.TechStore.getDescription() }}">
+      </iframe>
     </div>
   </div>
 </section>

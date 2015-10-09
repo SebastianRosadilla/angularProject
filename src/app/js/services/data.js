@@ -3,12 +3,13 @@
 
   var TechStoreProvider = function () {
     var items = [];
-    var main_Name = "About Us";
-    var main_Description = "Alfredo Sebastian Rosadilla Ribeiro";
+    var main_Name = "About us";
+    var main_Description = "http://localhost:3000";
 
-    var TechStore = function ($q, Technology) {
+    var TechStore = function ($q, $sce, Technology) {
         this._$q = $q;
         this._Technology = Technology;
+        this._$sce = $sce;
     };
 
     TechStore.prototype.getAll = function () {
@@ -47,8 +48,11 @@
 
     // SET THE MAIN NAME
     TechStore.prototype.setMainName = function(Name) {
+      var $scope = this;
       main_Name = Name;
-      main_Description = this.get(Name).links;
+      if(this.get(Name).links !== null) {
+        main_Description = $scope._$sce.trustAsResourceUrl(this.get(Name).links.home);
+      }
     };
 
     TechStore.prototype.download = function () {
@@ -75,8 +79,8 @@
     }
 
     return {
-      $get: function ($q, Technology) {
-        return new TechStore($q, Technology);
+      $get: function ($q, $sce, Technology) {
+        return new TechStore($q, $sce, Technology);
       }
     };
   };

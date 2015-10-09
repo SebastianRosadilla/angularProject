@@ -4,6 +4,14 @@
   width: 80%;
   .first-child {
     border: 10px solid black;
+    border-radius: 5px;
     max-height: 100%;
+  }
+  iframe {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px;
+    height: 34em;
+    margin-bottom: 5%;
+    width: 95%;
   }
 }
