@@ -6,7 +6,7 @@
              name="input"
              ng-model="sidebar.filter">
     </div>
-    <div class="" ng-repeat="tecno in sidebar.data | filter:sidebar.filter"
+    <div class="techs" ng-repeat="tecno in sidebar.data | filter:sidebar.filter"
           ng-click="sidebar.TechStore.setMainName(tecno.name)">
       <h4>{{tecno.name.toUpperCase() + '.'}}</h4>
       <h5 ng-if="tecno.version !== null">{{'(' + tecno.version + ')'}}</h5>
